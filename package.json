@@ -1,0 +1,32 @@
+{
+  "name": "mern-estates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.4",
+    "nodemon": "^3.1.0",
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0"
+  },
+  "resolutions": {
+    "postcss": "^8.3.11"
+  }
+}
