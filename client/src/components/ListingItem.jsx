@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { MdLocationOn } from 'react-icons/md';
+import { CiCalendarDate } from "react-icons/ci";
+import {  GiPlantsAndAnimals, GiOilDrum } from "react-icons/gi";
 
 export default function ListingItem({ listing }) {
   return (
-    <div className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[330px]'>
+    <div className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[330px] border-2 border-gray-300 shadow-2xl'>
       <Link to={`/listing/${listing._id}`}>
         <img
           src={
@@ -19,30 +21,29 @@ export default function ListingItem({ listing }) {
           </p>
           <div className='flex items-center gap-1'>
             <MdLocationOn className='h-4 w-4 text-green-700' />
-            <p className='text-sm text-gray-600 truncate w-full'>
-              {listing.address}
+            <p className='text-sm text-gray-600 truncate w-full font-bold'>
+            {listing.address}
             </p>
           </div>
           <p className='text-sm text-gray-600 line-clamp-2'>
             {listing.description}
           </p>
           <p className='text-slate-500 mt-2 font-semibold '>
-            $
-            {listing.offer
+            Rs - {listing.offer
               ? listing.discountPrice.toLocaleString('en-US')
               : listing.regularPrice.toLocaleString('en-US')}
-            {listing.type === 'rent' && ' / month'}
+            {listing.type === 'rent' && ''} / kg
           </p>
           <div className='text-slate-700 flex gap-4'>
             <div className='font-bold text-xs'>
               {listing.bedrooms > 1
-                ? `${listing.bedrooms} beds `
-                : `${listing.bedrooms} bed `}
+                ? `Produced on - ${listing.bedrooms}`
+                : `Produced on - ${listing.bedrooms}`}
             </div>
             <div className='font-bold text-xs'>
               {listing.bathrooms > 1
-                ? `${listing.bathrooms} baths `
-                : `${listing.bathrooms} bath `}
+                ? `Best before - ${listing.bathrooms}`
+                : `Best before - ${listing.bathrooms}`}
             </div>
           </div>
         </div>

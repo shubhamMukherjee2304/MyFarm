@@ -144,7 +144,7 @@ export default function Search() {
                 onChange={handleChange}
                 checked={sidebardata.type === 'all'}
               />
-              <span>Rent & Sale</span>
+              <span>Seasonal & Best Selling</span>
             </div>
             <div className='flex gap-2'>
               <input
@@ -154,7 +154,7 @@ export default function Search() {
                 onChange={handleChange}
                 checked={sidebardata.type === 'rent'}
               />
-              <span>Rent</span>
+              <span>Best Selling</span>
             </div>
             <div className='flex gap-2'>
               <input
@@ -164,7 +164,7 @@ export default function Search() {
                 onChange={handleChange}
                 checked={sidebardata.type === 'sale'}
               />
-              <span>Sale</span>
+              <span>Seasonal</span>
             </div>
             <div className='flex gap-2'>
               <input
@@ -187,7 +187,7 @@ export default function Search() {
                 onChange={handleChange}
                 checked={sidebardata.parking}
               />
-              <span>Parking</span>
+              <span>Organic</span>
             </div>
             <div className='flex gap-2'>
               <input
@@ -197,7 +197,7 @@ export default function Search() {
                 onChange={handleChange}
                 checked={sidebardata.furnished}
               />
-              <span>Furnished</span>
+              <span>Imported</span>
             </div>
           </div>
           <div className='flex items-center gap-2'>
@@ -221,11 +221,11 @@ export default function Search() {
       </div>
       <div className='flex-1'>
         <h1 className='text-3xl font-semibold border-b p-3 text-slate-700 mt-5'>
-          Listing results:
+          Product Result results:
         </h1>
         <div className='p-7 flex flex-wrap gap-4'>
           {!loading && listings.length === 0 && (
-            <p className='text-xl text-slate-700'>No listing found!</p>
+            <p className='text-xl text-slate-700'>No product found!</p>
           )}
           {loading && (
             <p className='text-xl text-slate-700 text-center w-full'>

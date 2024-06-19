@@ -24,11 +24,11 @@ const listingSchema = new mongoose.Schema(
 
         },
         bathrooms:{
-            type: Number,
+            type: String,
             required: true,
         },
         bedrooms: {
-            type: Number,
+            type: String,
             required: true,
         },
         furnished: {
