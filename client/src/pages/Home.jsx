@@ -88,11 +88,8 @@ export default function Home() {
       {/* listing results for offer, sale and rent */}
       <div  className='my-5 p-3' style={{textAlign:"center"}}> 
         <h1 className='text-green-700 text-3xl mb-6 font-bold'>Our Aim</h1>
-        <p className='my-8 p-4 text-center justify-center text-gray-500 max-w-6xl text-lg font-md sm:w-[800px]' style={{margin:"auto"}}> At My Farm, our mission is to empower farmers by providing a platform to showcase their best produce to a wider market. We aim to bridge the gap between farmers and buyers, ensuring that quality products receive the recognition they deserve. Our user-friendly interface enhances visibility, allowing farmers to list their products with ease and reach potential buyers locally and globally. <br/>
-
-We promote fair trade by ensuring transparency and fairness in transactions, helping farmers get the best value for their hard work. By facilitating direct communication between farmers and buyers, we foster stronger relationships and build trust within the agricultural community. Additionally, our platform provides access to the latest market trends and pricing information, helping farmers make informed decisions and improve their competitiveness and profitability.<br/>
-
-We also support and highlight sustainable farming practices, promoting eco-friendly and responsible agriculture. By leveraging technology, we aim to reduce barriers and make it easier for farmers to manage and grow their businesses. Together, we can create a vibrant marketplace where farmers thrive, and quality produce reaches those who need it. Join us in our journey to transform agriculture and build a better future for our farming communities.</p>
+        <p className='my-8 p-4 text-center justify-center text-gray-500 max-w-6xl text-lg font-md sm:w-[800px]' style={{margin:"auto"}}> At My Farm, our mission is to empower farmers by providing a platform to showcase their best produce to a wider market. We aim to bridge the gap between farmers and buyers, ensuring that quality products receive the recognition they deserve. Our user-friendly interface enhances visibility, allowing farmers to list their products with ease and reach potential buyers locally and globally. 
+</p>
       </div>
 
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>
